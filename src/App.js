@@ -62,7 +62,7 @@ const Roulette = () => {
         <div style={{ fontSize: "24px" }}>
           <div className="congrant-box">
             <p>
-              축하합니다!. <br />
+              축하합니다!! <br />
               당첨자는 다음과 같습니다.
             </p>
             <ul>
