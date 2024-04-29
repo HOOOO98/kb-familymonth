@@ -17,7 +17,7 @@ const Roulette = () => {
       setWinners(selectedWinners);
       setSpinning(false);
       setShowWinners(true);
-    }, 5000); // 5초 후에 추첨 결과 공개
+    }, 3000); // 5초 후에 추첨 결과 공개
   };
 
   const shuffle = (array) => {
