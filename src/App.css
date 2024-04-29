@@ -7,6 +7,7 @@
 }
 
 .roulette-container {
+  position: relative;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -48,4 +49,33 @@
 
 .congrant-box {
   text-align: center;
+}
+
+.sprite-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 246px;
+  height: 231px;
+  background-image: url("../public/sprite.png"); /* 스프라이트 이미지 경로 */
+  animation: sprite-animation 3s steps(4) infinite; /* 4개의 이미지가 4초 간격으로 보여짐 */
+}
+
+@keyframes sprite-animation {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -984px 0;
+  } /* 첫 번째 이미지가 0%에서 25%까지 보임 */
+  50% {
+    background-position: -1968px 0;
+  } /* 두 번째 이미지가 25%에서 50%까지 보임 */
+  75% {
+    background-position: -2952px 0;
+  } /* 세 번째 이미지가 50%에서 75%까지 보임 */
+  100% {
+    background-position: -3936px 0;
+  } /* 네 번째 이미지가 75%에서 100%까지 보임 */
 }

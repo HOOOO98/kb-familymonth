@@ -17,7 +17,7 @@ const Roulette = () => {
       setWinners(selectedWinners);
       setSpinning(false);
       setShowWinners(true);
-    }, 3000); // 5초 후에 추첨 결과 공개
+    }, 3000); // 3초 후에 추첨 결과 공개
   };
 
   const shuffle = (array) => {
@@ -40,10 +40,10 @@ const Roulette = () => {
   return (
     <div className="body">
       <div>
-        <h1>5월 가정의달 특별선물</h1>
         <div className="roulette-container">
           {!showWinners && (
             <>
+              <h1>5월 가정의달 특별선물</h1>
               <textarea
                 type="text"
                 value={participants}
@@ -56,15 +56,16 @@ const Roulette = () => {
               </button>
             </>
           )}
+          {spinning && <div className="sprite-container"></div>}
         </div>
       </div>
       {showWinners && (
         <div style={{ fontSize: "24px" }}>
           <div className="congrant-box">
-            <p>
+            <h1>
               축하합니다!! <br />
               당첨자는 다음과 같습니다.
-            </p>
+            </h1>
             <ul>
               {winners.map((winner, index) => (
                 <div className="winner" key={index}>
