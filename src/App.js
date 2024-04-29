@@ -56,7 +56,12 @@ const Roulette = () => {
               </button>
             </>
           )}
-          {spinning && <div className="sprite-container"></div>}
+          {spinning && (
+            <>
+              <div className="backdrop"></div>
+              <div className="sprite-container"></div>
+            </>
+          )}
         </div>
       </div>
       {showWinners && (

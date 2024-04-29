@@ -62,6 +62,13 @@
   animation: sprite-animation 3s steps(4) infinite; /* 4개의 이미지가 4초 간격으로 보여짐 */
 }
 
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @keyframes sprite-animation {
   0% {
     background-position: 0 0;
